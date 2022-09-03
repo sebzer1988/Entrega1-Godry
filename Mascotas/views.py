@@ -63,4 +63,4 @@ def buscar(request):
         perros=Perro.objects.filter(raza=raza)
         return render(request, "Mascotas/resultadosBusqueda.html", {"perros":perros})
     else:
-        return render(request, "Mascotas/busquedaPerro.htnl", {"mensaje":"Ingrese una raza de perro"} )
+        return render(request, "Mascotas/busquedaPerro.html", {"mensaje":"Ingrese una raza de perro"} )
