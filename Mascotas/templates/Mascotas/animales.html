@@ -1,0 +1,21 @@
+{% extends "Mascotas/padre.html" %}
+
+{% load static %} 
+
+{% block titulo %}
+<h1 class="mb-3">Otros animales</h1>
+<h4 class="mb-3">Se trata de todos los animales exoticos o salvajes en dificultad.</h4>
+{% endblock %} 
+
+{% block nombre_cambia %}
+
+<h4>Por favor, decinos que animal es:</h4> 
+<form action="{% url 'animales' %}" method="POST"> {% csrf_token %}
+
+    <table>
+        {{ formulario.as_table }}
+    </table>
+
+    <input type="submit" value="Enviar">
+</form>
+{% endblock %}

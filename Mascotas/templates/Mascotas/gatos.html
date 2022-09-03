@@ -1,0 +1,21 @@
+{% extends "Mascotas/padre.html" %}
+
+{% load static %} 
+
+{% block titulo %}
+<h1 class="mb-3">Gatos</h1>
+<h4 class="mb-3">Si encontraste un gato abandonado, esta es la pagina.</h4>
+{% endblock %} 
+
+{% block nombre_cambia %}
+
+<h4>Por favor, danos mas informaciones sobre el gato:</h4> 
+<form action="{% url 'gatos' %}" method="POST"> {% csrf_token %}
+
+    <table>
+        {{ formulario.as_table }}
+    </table>
+
+    <input type="submit" value="Enviar">
+</form>
+{% endblock %}

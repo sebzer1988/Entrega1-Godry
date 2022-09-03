@@ -1,0 +1,20 @@
+{% extends "Mascotas/padre.html" %}
+
+{% load static %} 
+
+{% block titulo %}
+<h1 class="mb-2">Perros para adoptar</h1>
+<h6 class="mb-3">Por favor, escribe la raza que estas buscando.</h6>
+<form action="{% url 'buscar' %}" method="GET">
+
+    <input type="text" name="raza" id="raza">
+
+    <input type="submit" value="Buscar">
+</form>
+{% endblock %} 
+
+{% block nombre_cambia %}
+
+<h4>Aqui podrás ver los perros que tenemos en nuestro centro.</h4>
+
+{% endblock %}
