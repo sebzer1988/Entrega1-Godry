@@ -1,6 +1,6 @@
 <div id="Mascotas" align="center">
   <img src="https://i.imgur.com/XWgFzFt.png" width="150" />
-  <h1 align="center">Centro de rescate de animales</h1>
+  <h1 align="center">Centro de rescate animal</h1>
 </div>
 
 
